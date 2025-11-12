@@ -1,4 +1,5 @@
 import random
+from ascii_stages import STAGES
 
 # List of secret words
 WORDS = ["python", "git", "github", "snowman", "meltdown"]
