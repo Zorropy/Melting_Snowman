@@ -55,9 +55,8 @@ def play_game():
 
         else:
             mistakes += 1
-
         # Überprüfung auf Spielende (Niederlage)
-        if mistakes == 4:
+        if mistakes == len(STAGES) - 1:
             display_game_state(mistakes, secret_word, guessed_letters)
             print(f"Zu viele Fehler! Der Schneemann ist geschmolzen! Das Wort war: {secret_word}")
             break
